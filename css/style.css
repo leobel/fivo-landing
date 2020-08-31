@@ -78,13 +78,18 @@ a {
 		color: #fff; 
 	}
 	.btn.btn-primary:hover {
-		background: #fff;
-		border-color: #fff;
-		color: #489FB5; 
+		background: #82C0CC;
+		border-color: #82C0CC;
+		color: #FFF; 
 	}
 	.btn.btn-primary.btn-black--hover:hover {
 		background: #666666;
 		color: #fff; 
+	}
+
+	.btn-primary:not(:disabled):not(.disabled):active {
+		background-color: #82C0CC;
+		border-color: #82C0CC;
 	}
 
 	.btn.btn-accent {
@@ -93,24 +98,25 @@ a {
 		color: #fff; 
 	}
 	.btn.btn-accent:hover {
-		background: #fff;
-		border-color: #fff;
-		color: #FFA62B; 
+		background: #E8982A;
+		border-color: #E8982A;
+		color: #FFF; 
 	}
 	.btn.btn-acccent.btn-black--hover:hover {
 		background: #666666;
 		color: #fff; 
 	}
 
-	.btn.btn-contact {
-		border: solid 1px #489FB5;
-		padding: 10px 25px !important;
-	}
-	.btn.btn-contact:hover {
-		background: #489FB5;
-		border-color: #489FB5;
-		color: #fff; 
-	}
+.btn.btn-contact {
+	border: solid 1px #FFA62B;
+	padding: 10px 25px !important;
+}
+
+.btn.btn-contact:hover {
+	background: #FFA62B;
+	border-color: #FFA62B;
+	color: #fff; 
+}
 
 .line-height-1 {
   line-height: 1 !important; }
@@ -151,14 +157,14 @@ a {
 
 .site-footer {
   padding: 4em 0;
-  background: #333333; }
+  background: #46494C; }
   @media (min-width: 768px) {
     .site-footer {
       padding: 8em 0; } }
   .site-footer .border-top {
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important; }
   .site-footer p {
-    color: #737373; }
+    color: #828282; }
   .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5 {
     color: #fff; }
   .site-footer a {
@@ -572,7 +578,7 @@ a {
   .sticky-wrapper .site-navbar {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
 	.sticky-wrapper .site-navbar .site-logo a {
-		color: #fff; 
+		color: #FFA62B; 
 	}
 	.sticky-wrapper .site-navbar ul li a {
 		color: rgba(255, 255, 255, 0.7) !important; 
@@ -590,7 +596,7 @@ a {
 		box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2); 
 	}
 	.sticky-wrapper.is-sticky .site-navbar .site-logo a {
-		color: #489FB5; 
+		color: #FFA62B; 
 	}
 	.sticky-wrapper.is-sticky .site-navbar ul li a {
 		color: #000 !important; 
@@ -605,6 +611,11 @@ a {
     padding-top: 10px !important;
 		padding-bottom: 10px !important; 
 	}
+
+.sticky-wrapper .site-navbar ul li a.btn.btn-contact {
+	color: #FFA62B !important;
+}
+	
 
 /* Blocks */
 .site-blocks-cover {
