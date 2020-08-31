@@ -29,6 +29,10 @@ $(document).ready(function(){
 			data: { name: 'Lead', email: email, message: 'From footer' },         
 			success: function() {
 				$('#lead-email-footer').val('');
+				$('[data-toggle="popover"]').popover('show');
+				setTimeout(function(){
+					$('[data-toggle="popover"]').popover('hide');
+				}, 3000);
 			}
 		});
 	});

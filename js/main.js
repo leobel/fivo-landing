@@ -272,4 +272,11 @@ jQuery(document).ready(function($) {
 
   };
 	siteScroll();
+
+	$('[data-toggle="popover"]').popover({
+		container: 'body',
+		placement: 'top',
+		trigger: 'manual'
+	});
+
 });
