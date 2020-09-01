@@ -32,6 +32,10 @@ a {
 	color: #000 !important; }
 	
 .text-brown {
+	color: #46494C !important;
+}
+
+.text-brown-light {
 	color: #5E6164 !important;
 }
 
@@ -603,7 +607,7 @@ a {
 		color: #FFA62B; 
 	}
 	.sticky-wrapper.is-sticky .site-navbar ul li a {
-		color: #5E6164 !important; 
+		color: #46494C !important; 
 	}
 	.sticky-wrapper.is-sticky .site-navbar ul li a.btn.btn.btn-contact:hover {
 		color: #fff !important;
@@ -1641,7 +1645,7 @@ a {
 .section-sub-title {
 	font-size: 30px;
 	font-weight: 600;
-  color: #5E6164;
+  color: #46494C;
 }
 
 .section-title {
