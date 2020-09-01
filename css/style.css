@@ -29,7 +29,11 @@ a {
   border-width: 2px; }
 
 .text-black {
-  color: #000 !important; }
+	color: #000 !important; }
+	
+.text-brown {
+	color: #5E6164 !important;
+}
 
 .bg-black {
   background: #000 !important; }
@@ -599,7 +603,7 @@ a {
 		color: #FFA62B; 
 	}
 	.sticky-wrapper.is-sticky .site-navbar ul li a {
-		color: #000 !important; 
+		color: #5E6164 !important; 
 	}
 	.sticky-wrapper.is-sticky .site-navbar ul li a.btn.btn.btn-contact:hover {
 		color: #fff !important;
