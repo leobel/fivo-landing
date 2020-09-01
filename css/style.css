@@ -1939,3 +1939,10 @@ a {
 #beneficts .row {
 	margin-bottom: 50px;
 }
+
+
+/* popover */
+.popover-header {
+	background-color: #176879;
+	color: white;
+}
