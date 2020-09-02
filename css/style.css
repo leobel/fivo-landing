@@ -1954,3 +1954,47 @@ a {
 	background-color: #176879;
 	color: white;
 }
+
+
+/* whatsapp */
+.whatsapp {
+	position: fixed;
+	bottom: 20px;
+	right: -215px;
+	z-index: 500;
+	background-color: #176879;
+	border-radius: 36px;
+}
+
+.whatsapp a {
+	padding: 10px 20px;
+}
+
+.whatsapp a span.wsp-icon {
+	width: 36px;
+	height: 36px;
+	display: inline-block;
+	background-image: url('../images/whatsapp.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	margin-right: 10px;
+}
+
+.whatsapp a span.wsp-label {
+	display: inline;
+	margin: 0;
+	color: #fff;
+}
+
+@media (max-width: 768px) {
+	.whatsapp a {
+		padding: 10px;
+	}
+	.whatsapp a span.wsp-icon {
+		margin: 0;
+	}
+	.whatsapp a span.wsp-label {
+		display: none;
+	}
+}

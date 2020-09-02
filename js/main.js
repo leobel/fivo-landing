@@ -253,21 +253,34 @@ jQuery(document).ready(function($) {
     });
   };
   OnePageNavigation();
-
+	let animating = false;
   var siteScroll = function() {
-
-  	
-
   	$(window).scroll(function() {
-
   		var st = $(this).scrollTop();
-
   		if (st > 100) {
-  			$('.js-sticky-header').addClass('shrink');
+				$('.js-sticky-header').addClass('shrink');
+				if (!animating && $('.whatsapp').css('right') === '-215px') {
+					animating = true;
+					$('.whatsapp').animate({
+						'right': '+=225px'
+					}, 'fast', 'easeInOutCirc', function () {
+						console.log('show');
+						animating = false;
+					});
+				};
+				
   		} else {
-  			$('.js-sticky-header').removeClass('shrink');
-  		}
-
+				$('.js-sticky-header').removeClass('shrink');
+				if (!animating && $('.whatsapp').css('right') === '10px') {
+					animating = true;
+					$('.whatsapp').animate({
+						'right': '-=225px'
+					}, 'fast', function() {
+						console.log('hide');
+						animating = false;
+					});
+				}
+			}
   	}) 
 
   };
@@ -279,4 +292,18 @@ jQuery(document).ready(function($) {
 		trigger: 'manual'
 	});
 
+
+	$('.whatsapp a').click(function(e){
+		e.preventDefault();
+		let href = this.href;
+		$.ajax({
+			type: "POST",
+			url: "whatsapp.php",
+			dataType: "json",
+			success: function(data){
+				let url = href + '/' + data['number'];
+				window.open(url, '_blank');
+			}
+		});
+	});
 });
