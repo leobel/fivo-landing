@@ -160,4 +160,30 @@ jQuery(document).ready(function($) {
 			}
 		});
 	});
+
+
+	$(".footer-subscribe").validate({
+		errorPlacement: $.noop
+	});
+	$("#contactus").validate({
+		errorPlacement: $.noop
+	});
+	
+	$('#contact').prop('disabled', 'disabled');
+	$('#cemail').on('blur keyup', function() {
+    if ($("#contactus").valid()) {
+        $('#contact').prop('disabled', false);  
+    } else {
+        $('#contact').prop('disabled', 'disabled');
+    }
+	});
+
+	$('#contact-footer').prop('disabled', 'disabled');
+	$('#lead-email-footer').on('blur keyup', function() {
+    if ($(".footer-subscribe").valid()) {
+        $('#contact-footer').prop('disabled', false);  
+    } else {
+        $('#contact-footer').prop('disabled', 'disabled');
+    }
+	});
 });

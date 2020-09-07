@@ -292,7 +292,7 @@
 								<div class="row form-group">
 									<div class="col-md-12">
 										<label class="text-brown" for="cemail">Correo</label>
-										<input type="email" name="email" id="cemail" class="form-control">
+										<input type="email" name="email" id="cemail" class="form-control" required>
 									</div>
 								</div>
 								<div class="row form-group">
@@ -345,7 +345,7 @@
 								<h2 class="footer-heading mb-4">¿Querés saber más?</h2>
 								<form action="mail.php" method="post" class="footer-subscribe">
 									<div class="input-group mb-3">
-										<input type="text" class="form-control border-secondary text-white bg-transparent" id="lead-email-footer"
+										<input type="email" class="form-control border-secondary text-white bg-transparent" id="lead-email-footer" required
 											placeholder="Escribe tu correo" aria-label="Enter Email" aria-describedby="button-addon2" name="lead-email-footer">
 										<div class="input-group-append">
 											<button class="btn btn-accent" type="button" id="contact-footer" 
@@ -369,6 +369,7 @@
 			</footer>
 		</div>
 		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.easing.1.3.js"></script>
